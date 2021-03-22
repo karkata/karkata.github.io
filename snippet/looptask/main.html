@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoopTask Pattern</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?autoload=true"></script>
+    <link rel="stylesheet" type="text/css" href="../../default.css"/>
+</head>
+<body>
+    <div class="main">
+        <h1>LoopTask Pattern</h1>
+        <p>
+            LoopTask Pattern은 자바스크립트에서 일련의 작업(일종의 함수)들을 순차적으로 실행하는 루틴을 가지고 있는 패턴이다. 이런 기능은 이미 Promise를 사용하여 구현할 수 있지만, LoopTask는 Promise(고급스런)를 사용하기에 어려운 환경에서 비슷한 기능을 제공한다.
+        </p>
+        <p>LoopTask Pattern을 함수로 구현하면 다음과 같다. 함수 loopTask의 구조를 설명하기 전에 매개 변수 s에 대해서 먼저 알아보자.</p>
+        <pre class="prettyprint">
+/**
+ * 작업 루프를 실행하는 함수이다.
+ * @param s 'length, init, func, complete, error'를 속성으로 가지는 객체를 파라미터로 받는다.
+ */
+function loopTask(s) {
+    var index = -2;
+    var next = function () {
+        index++;
+        try {
+            if (index === -1) {
+                if (s.init && typeof s.init == "function") s.init(next);
+            } else if (index &gt; -1 && index &lt; s.length) {
+                if (s.func && typeof s.func == "function") s.func(next, index);
+            } else {
+                if (s.complete && typeof o.complete == "function") s.complete();
+            }
+        } catch (ex) {
+            if (s.error && typeof s.error == "function") s.error(ex, index);
+        }
+    };
+    next();
+}</pre>    
+        <p>loopTask 함수의 매개 변수 s는 다음과 같은 객체로 선언되어야 한다.</p>
+        <pre class="prettyprint">
+var s = {
+    length: 1,
+    init: function (next) { ...; next(); },
+    func: function (next, index) { ...; next(); },
+    complete: function (next) { ...; },
+    error: function (ex, index) { ...; }
+};</pre>
+        <p>loopTask 함수는 매개 변수 s의 속성(함수)들을 순차적으로 호출한다. 맨 처음 init 그리고 length 값 만큼 func를 호출하고 마지막에 complete 속성을 호출한다. 물론 중간에 오류가 발생하면 error 속성에 등록된 함수를 호출하며 작업을 종료한다.</p>
+        <p>init과 func 속성에 등록된 함수는 반드시 작업 루틴을 끝나고 나면 매개 변수 next 함수를 호출하도록 코드를 구성해야 한다. next를 호출하지 않는다면, 모든 작업은 그 시점에서 종료될 것이다.</p>
+    </div>
+</body>
+</html>
