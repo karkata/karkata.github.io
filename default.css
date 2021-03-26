@@ -52,3 +52,14 @@ pre.prettyprint, code.prettyprint {
     line-height: 1.5rem;
     padding: 1rem 1rem;
 }
+
+.footer {
+    margin-top: 2rem;
+    border-top: 1px solid #aaaaaa;
+}
+.footer p {
+    line-height: 5rem;
+    margin-top: 0;
+    margin-left: 2rem;
+    font-size: 0.75rem;
+}
