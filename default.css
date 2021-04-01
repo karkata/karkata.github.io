@@ -46,7 +46,10 @@ pre.prettyprint, code.prettyprint {
     font-size: 1rem;
     line-height: 1.5rem;
     padding: 1rem 1rem;
+    white-space: pre-wrap;
 }
+
+.sub-comment { color: #888888; }
 
 .footer {
     background-color: #444;
