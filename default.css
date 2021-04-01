@@ -15,26 +15,21 @@ body {
 
 code, pre, p { font-family: 'Roboto Mono', 'Malgun Gothic', sans-serif; }
 
-.main { margin: 2rem 2rem auto 2rem; }
+.main { margin: 2rem auto 2rem auto; width: 80%; }
 
-.main h1 {
-    font-size: 2.5rem;
+.main section.subject h1 { font-size: 2.5rem; }
+.main section.subject .author { 
+    margin-top: 5rem;
+    margin-bottom: 0; 
+    font-size: 1rem; 
+    color: #444444; 
 }
+.main section.subject .date { margin-top: 0; font-size: 0.8rem; color: #888888; }
 
-.main section h2 {
-    font-size: 1.5rem;
-    font-weight: normal;
-}
-
-.main section p {
-    font-size: 1rem;
-    line-height: 1.75rem;
-}
-
-.main ul li {
-    margin-top: 0.25rem;
-    margin-bottom: 0.25rem;
-}
+.main section.content { margin-top: 2rem; }
+.main section.content h2 { font-size: 1.5rem; }
+.main section.content p { font-size: 1rem; line-height: 1.75rem; }
+.main section.content ul li { margin-top: 0.25rem; margin-bottom: 0.25rem; }
 
 pre .str, code .str { color: #8000ff; } /* string */
 pre .kwd, code .kwd { color: #30b030; } /* keyword */
@@ -54,12 +49,20 @@ pre.prettyprint, code.prettyprint {
 }
 
 .footer {
-    margin-top: 2rem;
-    border-top: 1px solid #aaaaaa;
+    background-color: #444;
 }
-.footer p {
-    line-height: 5rem;
+
+.footer .main p.site {
+    margin-bottom: 0;
+    padding: 2rem 0rem 0rem 0rem;
+    font-size: 1.5rem;    
+    color: #F5F5F5;
+}
+
+.footer .main p.email {
     margin-top: 0;
-    margin-left: 2rem;
-    font-size: 0.75rem;
+    padding: 0rem 0rem 2rem 0rem;
+    font-size: 0.8rem;
+    color: #999999;
 }
+
