@@ -99,8 +99,8 @@ public class JavaScriptGlobalSettingController : Controller
     // 웹애플리케이션 루트 URL =&gt; http(s)://domain(:port)/WebApp
     var rootUrl = new Uri(HttpContext.Current.Request.Url, rootPath).ToString();
 }
-window.rootPath = "@rootPath";
-window.rootUrl  = "@rootUrl";           
+var rootPath = "@rootPath";
+var rootUrl  = "@rootUrl";           
 </pre>
             <p>페이지 소스는 다음과 같다.</p>
             <pre class="prettyprint">
