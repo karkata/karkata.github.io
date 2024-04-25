@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e8d11d73.css",
+    "main.js": "/static/js/main.bf3216c9.js",
+    "static/media/ico-login.svg": "/static/media/ico-login.99a5ff30f22096fd4c4e.svg",
+    "static/media/ico-more-vertical.svg": "/static/media/ico-more-vertical.a4b69d5f4eac983e7d4e.svg",
+    "index.html": "/index.html",
+    "static/media/ico-floppy.svg": "/static/media/ico-floppy.1d56822bbcc56682a8ce.svg",
+    "static/media/ico-cross.svg": "/static/media/ico-cross.b286c5e89e2eae3c8db7.svg",
+    "main.e8d11d73.css.map": "/static/css/main.e8d11d73.css.map",
+    "main.bf3216c9.js.map": "/static/js/main.bf3216c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8d11d73.css",
+    "static/js/main.bf3216c9.js"
+  ]
+}
