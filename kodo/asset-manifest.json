@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/kodo/static/css/main.ece4ec73.css",
-    "main.js": "/kodo/static/js/main.8b1b48c7.js",
+    "main.css": "/kodo/static/css/main.0133397e.css",
+    "main.js": "/kodo/static/js/main.db80f0e7.js",
     "static/media/ico-login.svg": "/kodo/static/media/ico-login.99a5ff30f22096fd4c4e.svg",
     "static/media/ico-more-vertical.svg": "/kodo/static/media/ico-more-vertical.a4b69d5f4eac983e7d4e.svg",
     "index.html": "/kodo/index.html",
     "static/media/ico-floppy.svg": "/kodo/static/media/ico-floppy.1d56822bbcc56682a8ce.svg",
     "static/media/ico-cross.svg": "/kodo/static/media/ico-cross.b286c5e89e2eae3c8db7.svg",
-    "main.ece4ec73.css.map": "/kodo/static/css/main.ece4ec73.css.map",
-    "main.8b1b48c7.js.map": "/kodo/static/js/main.8b1b48c7.js.map"
+    "main.0133397e.css.map": "/kodo/static/css/main.0133397e.css.map",
+    "main.db80f0e7.js.map": "/kodo/static/js/main.db80f0e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.ece4ec73.css",
-    "static/js/main.8b1b48c7.js"
+    "static/css/main.0133397e.css",
+    "static/js/main.db80f0e7.js"
   ]
 }
