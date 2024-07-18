@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/kodo/static/css/main.0133397e.css",
-    "main.js": "/kodo/static/js/main.db80f0e7.js",
-    "static/media/ico-login.svg": "/kodo/static/media/ico-login.99a5ff30f22096fd4c4e.svg",
+    "main.css": "/kodo/static/css/main.9d97d6b1.css",
+    "main.js": "/kodo/static/js/main.01d577fd.js",
+    "static/js/773.6389ea59.chunk.js": "/kodo/static/js/773.6389ea59.chunk.js",
     "static/media/ico-more-vertical.svg": "/kodo/static/media/ico-more-vertical.a4b69d5f4eac983e7d4e.svg",
+    "static/media/ico-list-mng.svg": "/kodo/static/media/ico-list-mng.47bd2d92f0bcbed17340.svg",
     "index.html": "/kodo/index.html",
-    "static/media/ico-floppy.svg": "/kodo/static/media/ico-floppy.1d56822bbcc56682a8ce.svg",
+    "static/media/ico-login.svg": "/kodo/static/media/ico-login.f4f6ba08594df8d7c7dd.svg",
+    "static/media/ico-logout.svg": "/kodo/static/media/ico-logout.c71f8bb587dc3ef35ff5.svg",
+    "static/media/ico-save.svg": "/kodo/static/media/ico-save.fd6761088439511f8107.svg",
     "static/media/ico-cross.svg": "/kodo/static/media/ico-cross.b286c5e89e2eae3c8db7.svg",
-    "main.0133397e.css.map": "/kodo/static/css/main.0133397e.css.map",
-    "main.db80f0e7.js.map": "/kodo/static/js/main.db80f0e7.js.map"
+    "main.9d97d6b1.css.map": "/kodo/static/css/main.9d97d6b1.css.map",
+    "main.01d577fd.js.map": "/kodo/static/js/main.01d577fd.js.map",
+    "773.6389ea59.chunk.js.map": "/kodo/static/js/773.6389ea59.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0133397e.css",
-    "static/js/main.db80f0e7.js"
+    "static/css/main.9d97d6b1.css",
+    "static/js/main.01d577fd.js"
   ]
 }

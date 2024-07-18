@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkkodo=self.webpackChunkkodo||[]).push([[773],{773:(e,s,o)=>{o.r(s),o.d(s,{default:()=>a});const a={API_KEY:"AIzaSyCAJ97BedmpWMqfAYXylFFObkU4U1m7zVw",CLIENT_ID:"888454475151-c6sva7109mu2km5ssie1aa3ntut79pdn.apps.googleusercontent.com"}}}]);
+//# sourceMappingURL=773.6389ea59.chunk.js.map
